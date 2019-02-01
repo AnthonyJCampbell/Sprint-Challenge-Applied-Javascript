@@ -31,11 +31,14 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
-
+The DOM is an API that represents the entire webpage, with all it's content, structure and styling. The DOM gives us the ability to manipulate the document of the webpage _without_ actually mutating the underlying `.html`-file. For example, with JavaScript, we can identify different elements in the browser and then modify them to achieve a certain goal. The DOM is tree-shaped, following the structure of the HTML document. As such, the 'highest' element will always be `document`, followed by the root element, which is `<html>`.
 
 2. What is an event?
+An event is the denotation we use to signifiy that something has happened or changed within the browser. One of the foremost examples of an event would be the webpage loading on the user's browser. As soon as all files are received from the servers and correctly implemented, an event 'fires' with all relevant data attached to it. Other examples would be a button getting clicked, a mouse moving over a specific element or resizing the browser window. In effect, whenever something 'happens' or 'changes' on the webpage (even when it might not be obvious to the user), an event fires.
+Often, when an event is intentionally triggered, you may want to do something as a result, which leads us to...
 
 3. What is an event listener?
+An event listener is a method that's added to a specific browser element. The method accepts two parameters; a event or event-specifier and a function that's to be executed as soon as the specified event fires on the designated element.
 
 4. Why would we convert a NodeList into an Array?
 
@@ -43,10 +46,10 @@ Edit this document to include your answers after each question. Make sure to lea
 
 ### Git Set up
 
-* [ ] Fork the project into your GitHub user account
-* [ ] Clone the forked project into a directory on your machine
-* [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-* [ ] You are now ready to build this project with your preferred IDE
+* [x] Fork the project into your GitHub user account
+* [x] Clone the forked project into a directory on your machine
+* [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+* [x] You are now ready to build this project with your preferred IDE
 
 ## Minimum Viable Product
 
