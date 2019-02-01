@@ -38,11 +38,13 @@ An event is the denotation we use to signifiy that something has happened or cha
 Often, when an event is intentionally triggered, you may want to do something as a result, which leads us to...
 
 3. What is an event listener?
-An event listener is a method that's added to a specific browser element. The method accepts two parameters; a event or event-specifier and a function that's to be executed as soon as the specified event fires on the designated element.
+An event listener is a method that's added to a specific browser element. The method accepts two parameters; a event or event-specifier and a function that's to be executed as soon as the specified event fires on the designated element. There are dozens of different events you can use as a parameter and you can inject whatever function you desire. Finally, there's also no limit to how many eventListeners you can add to a single element. The function passed to the `.addEventListener()`-method can also do anything and everything you want it to do, within the parameters of JavaScript. At it's core, `.addEventListener()`is responsible for the vast majority of interactivity we see on the web nowadays.
 
 4. Why would we convert a NodeList into an Array?
+The DOM uses nodes and elements to keep track of the entire webpage. When we select a collection of web elements - let's say all the `<button>` elements - we get a NodeList containing all the relevant items. A NodeList looks rather similar to an Array at first glance. However, its prototype is different, which means that its functionality is dissimilar as well. To use all the array methods we've come to love (and occassionally hate), we need to transform the NodeList into an array. This can be done by using `Array.from(${NodeList})`.
 
 5. What is a component?
+Components are building blocks used in making our website. When using similar elements in more than place in a website, it makes sense to isolate and standardize that piece of code - let's say for a `<button>` or an element with class `.productCard`. In doing so, we'd make a single element, style it correctly and make sure it has the correct functionality, and then simply reuse this newly-made component wherever necessary, with some slight alterations if need be. Components are an incredibly powerful way to build webpages, large and small, and allows for rapid prototyping. It's much easier to slap a dozen pre-existing components together than hand-writing every single element and style indicator for an entire page. Bootstrap is well-known for it's incredibly versatile library of components.
 
 ### Git Set up
 
